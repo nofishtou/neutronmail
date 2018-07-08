@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NeutronMail</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="headerlogo">
+        <a class="headerlogo__link"  href="#">neutron<span class="headerlogo__link--color">Mail</span></a>
+      </div>
+      <div class="headerlist" id="headermenu">
+        <ul>
+          <li><a class="headerlist__item" href="#">About</a></li>
+          <li><a class="headerlist__item" href="#">Security</a></li>
+          <li><a class="headerlist__item" href="#">Blog</a></li>
+          <li><a class="headerlist__item" href="#">Carees</a></li>
+          <li><a class="headerlist__item" href="#">Support</a></li>
+          <li><a class="headerlist__item" href="#">Donate</a></li>
+          <li><a class="headerlist__item headericon"  href="javascript:void(0);" class="icon" onclick="showOrCloseMenu()">
+            <i class="fa fa-bars"></i>
+          </a></li>
+        </ul>
+      </div>
+      <div class="headerlogin">
+        <a class="headerlogin__log" href="#"><i class="fa fa-share" aria-hidden="true"></i>
+          Log in</a>
+        <a class="headerlogin__sign" href="#">Sign up</a>
+      </div>
+      <div class="headerlangbar">
+        <ul>
+          <li><a class="headerlangbar__link activelang" href="#" onclick="fnemu(1)">English</a><span>/</span></li>
+          <li><a class="headerlangbar__link" href="#" onclick="fnemu(2)">French</a><span>/</span></li>
+          <li><a class="headerlangbar__link" href="#" onclick="fnemu(3)">Italian</a><span>/</span></li>
+          <li><a class="headerlangbar__link" href="#" onclick="fnemu(4)">Russian</a><span>/</span></li>
+        </ul>
+      </div>
+      <div class="headercontent">
+        <h1 class="headercontent__heading">Secure Email Communication</h1>
+        <p class="headercontent__text">Based in <span>Somewhere</span></p>
+        <button class="button__сreateacc" type="button">Create account</button>
+        <button class="smallicon smallicon--margin" type="button"><i class="fa fa-apple" aria-hidden="true"></i>
+        </button>
+        <button class="smallicon" type="button"><i class="fa fa-google" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <div class="headersocial">
+      <a class="socialicon" href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a> 
+      <a class="socialicon" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+      <a class="socialicon" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+  </header>
+  <main>
+    <section class="values">
+      <div class="container">
+        <div class="valuescontent">
+          <div class="valuesitem valuesitem--borderright  valuesitem--borderrightlowres">
+            <div class="valuesitemheader">
+              <img src="img/shield.png" alt="shield">
+              <h3 class="valuesitemheader__heading">
+                Swiss Privacy
+              </h3>
+              <p class="valuesitemheader__text">
+                Data Security and Neutrality
+              </p>
+            </div>
+            <div class="valuesitembody">
+                <p class="valuesitembody__text">
+                  NeutronMail is incorporated in Somewhere and all our servers are located in Switzerland. This means all user data is
+                  protected by strict Swiss privacy laws.
+                </p>
+            </div>
+          </div>
+          <div class="valuesitem valuesitem--borderright">
+            <div class="valuesitemheader">
+              <img src="img/lock.png" alt="lock">
+              <h3 class="valuesitemheader__heading">
+                Double Encryption
+              </h3>
+              <p class="valuesitemheader__text">
+                Automatic Email Security
+              </p>
+            </div>
+            <div class="valuesitembody">
+              <p class="valuesitembody__text">
+                All emails are secured automatically with end-to-end encryption. This means even we cannot decrypt and read your emails. As a result, your encrypted emails cannot
+                be shared with third parties.
+              </p>
+            </div>
+          </div>
+          <div class="valuesitem">
+            <div class="valuesitemheader">
+              <img src="img/key.png" alt="key">
+              <h3  class="valuesitemheader__heading">
+                Anonymous Email
+              </h3>
+              <p class="valuesitemheader__text">
+                Protect Your Privacy
+              </p>
+            </div>
+            <div class="valuesitembody">
+              <p class="valuesitembody__text">
+                No personal information is required to create your secure email account. By default, we do not keep any IP logs which can be linked to your anonymous email account. Your privacy comes first.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="valuestext">
+          <h2 class="valuestext__heading">
+            Physical Security
+          </h2>
+          <p class="valuestext__content">
+            NeutronMail's infrastructure resides in Europe's <span>most secure</span> datacenter, underneath 1000 meters of solid rock.
+          </p>
+        </div>
+        <div class="valuesaddiction">
+          <a href="#">Learn more about our security features</a>
+        </div>
+      </div>
+    </section>
+    <section class="companies">
+      <div class="companiescontent">
+        <img src="img/wallstreet.png" alt="Wall Street Journal">
+        <img src="img/nytimes.png" alt="The NYTimes logo">
+        <img src="img/guardian.png" alt="The Guardian logo">
+        <img src="img/forbes.png" alt="Forbes logo">
+        <img src="img/journal.png" alt="journal logo">
+        <img src="img/foxnews.png" alt="The Fox News logo">
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div class="slidernav">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="slidercontainer">
+          <div class="slide">
+            <p class="slide__text">
+              A new email service being developed by a group from MIT and CERN promises to bring secure,
+                encrypted email to the masses and keep sensitive information away from prying eyes.
+            </p>
+            <span class="slide__autor">
+                - Boston Herald
+            </span>
+          </div>
+          <div class="slide">
+            <p class="slide__text">
+              Whoever fights monsters should see to it that in the process he does not become a monster. And if you gaze long enough into an abyss, the abyss will gaze back into you.
+            </p>
+            <span class="slide__autor">
+                - Friedrich Nietzsche
+            </span>
+          </div>
+          <div class="slide">
+            <p class="slide__text">
+              He who knows that enough is enough will always have enough.
+            </p>
+            <span class="slide__autor">
+                - Lao Tzu
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="formobile">
+      <div class="formobilebg"></div>
+      <div class="container">
+        <div class="notebookcontainer">
+          <img class="notebook" src="img/notebookimg.png" alt="notebook ">
+        </div>
+        <div class="formmobilecontent">
+          <div class="formobilecontentbody">
+            <h2 class="formmobilecontent__heading">
+              Any device, anywhere
+            </h2>
+            <p class="formmobilecontent__text">
+              The NeutronMail inbox is optimized for productivity. Each detail within our secure email service is optimized to help you better read, organize, and send email.
+            </p>
+          </div>
+          <div class="formobilecontentbottom">
+            <a class="buttonformobile" href="#">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="20" viewBox="0 0 17 20"><path fill="#fff" fill-rule="evenodd" d="M12.763 0c.137 1.177-.34 2.353-1.093 3.202-.75.85-1.98 1.503-3.073 1.372-.137-1.11.41-2.352 1.093-3.071C10.44.719 11.739.065 12.763 0zm3.701 6.836c-.35.235-2.198 1.474-2.198 3.816.068 3.073 2.8 4.052 2.732 3.988 0 .064-.41 1.503-1.434 2.875-.888 1.24-1.777 2.483-3.211 2.483-.701 0-1.174-.188-1.656-.379-.506-.2-1.024-.405-1.828-.405-.838 0-1.366.205-1.883.406-.452.175-.895.348-1.532.378-1.366.066-2.391-1.307-3.279-2.549C.4 14.966-.967 10.392.877 7.32c.888-1.504 2.528-2.483 4.304-2.483.77 0 1.519.29 2.17.544.507.196.956.37 1.313.37.32 0 .755-.16 1.263-.346.794-.29 1.769-.648 2.768-.568.682 0 2.595.195 3.825 1.96l-.056.039z" clip-rule="evenodd"></path></svg></span>
+              <span> APP STORE</span>
+            </a>
+            <a class="buttonformobile" href="#">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 21 24"><g fill="none"><path fill="#fff" d="M 0.329699 0C 0.0824244 0.256629 0 0.684342 0 1.1976L 0 20.1026C 0 20.6158 0.16485 21.0435 0.412124 21.3002L 0.494549 21.3857L 10.7152 10.7784L 10.7152 10.6929L 10.7152 10.6073L 0.329699 0Z" transform="translate(1 1.28125)"></path><path stroke="#000" stroke-width=".8" d="M 0.329699 0C 0.0824244 0.256629 0 0.684342 0 1.1976L 0 20.1026C 0 20.6158 0.16485 21.0435 0.412124 21.3002L 0.494549 21.3857L 10.7152 10.7784L 10.7152 10.6929L 10.7152 10.6073L 0.329699 0Z" transform="translate(1 1.28125)"></path><path fill="#fff" d="M 3.37942 7.27114L -3.14426e-07 3.76389L -3.14426e-07 3.5928L -3.14426e-07 3.50726L 3.37942 1.6316e-07L 3.46184 0.0855425L 7.50066 2.48074C 8.6546 3.16509 8.6546 4.27714 7.50066 4.96148L 3.37942 7.27114Z" transform="translate(11.6338 8.38184)"></path><path stroke="#000" stroke-width=".8" d="M 3.37942 7.27114L -3.14426e-07 3.76389L -3.14426e-07 3.5928L -3.14426e-07 3.50726L 3.37942 1.6316e-07L 3.46184 0.0855425L 7.50066 2.48074C 8.6546 3.16509 8.6546 4.27714 7.50066 4.96148L 3.37942 7.27114Z" transform="translate(11.6338 8.38184)"></path><path fill="#fff" d="M 13.7649 3.5928L 10.3031 0L -3.14426e-07 10.6929C 0.412124 11.1206 0.989097 11.1206 1.73092 10.7784L 13.7649 3.5928Z" transform="translate(1.33008 11.9756)"></path><path stroke="#000" stroke-width=".8" d="M 13.7649 3.5928L 10.3031 0L -3.14426e-07 10.6929C 0.412124 11.1206 0.989097 11.1206 1.73092 10.7784L 13.7649 3.5928Z" transform="translate(1.33008 11.9756)"></path><path fill="#fff" d="M 13.7649 7.38126L 1.73092 0.281201C 0.989097 -0.146513 0.412124 -0.0609704 -3.14426e-07 0.366744L 10.3031 10.9741L 13.7649 7.38126Z" transform="translate(1.33008 1)"></path><path stroke="#000" stroke-width=".8" d="M 13.7649 7.38126L 1.73092 0.281201C 0.989097 -0.146513 0.412124 -0.0609704 -3.14426e-07 0.366744L 10.3031 10.9741L 13.7649 7.38126Z" transform="translate(1.33008 1)"></path></g></svg></span>
+              <span> GOOGLE STORE</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="donate">
+      <div class="container">
+        <h2 class="donate__heading">Privacy is a fundamental human right.</h2>
+        <p class="donate__text">Your support helps us to protect privacy world-wide.</p>
+        <button class="donate__button"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+          Upgrade to Paid Plan</button>
+        <button class="donate__button"><i class="fa fa-usd" aria-hidden="true"></i>
+          Donate</button>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+  <footer>
+    <div class="footercontainer">
+    <div class="container">
+        <div class="helperscontainer">
+            <span>Those, who help us secure your privacy</span>
+            <div class="helperslist">
+              <img src="img/velture.png" alt="Venture Mentoring">
+              <img src="img/detalis.png" alt="Details">
+              <img src="img/fongit.png" alt="Fongit">
+              <img src="img/quovadis.png" alt="QuoVadis">
+              <img src="img/eagle.png" alt="Eagle">
+              <img src="img/radware.png" alt="Radware">
+              <img src="img/ipmax.png" alt="Ip-max">
+            </div>  
+          </div>
+        <div class="helpersbody">
+            <div  class="helpersbodymainitem">
+              <p>
+                General: contact@neutronmail.ch
+              </p>
+              <p>
+                Media: media@neutronmail.ch
+              </p>
+              <p>
+                Security: security@neutronmail.ch
+              </p>
+              <p class="bottomtext">
+                For support inquiries, please visit
+                <a href="#">neutronmail.com/support</a>  
+              </p>
+            </div>
+            <div class="helpersbodyitem item--borderright">
+              <h4 class="helpersbodyitem__heading">Company</h4>
+              <ul>
+                <li><a class="helpersbodyitem__link" href="#">Blog</a></li>
+                <li><a class="helpersbodyitem__link" href="#">Team</a></li>
+                <li><a class="helpersbodyitem__link" href="#">Careers</a></li>
+                <li><a class="helpersbodyitem__link" href="#">Support</a></li>
+                <li><a class="helpersbodyitem__link" href="#">Donate</a></li>
+              </ul>
+            </div>
+            <div class="helpersbodyitem">
+              <h4 class="helpersbodyitem__heading">Legal</h4>
+              <ul>
+                <li><a class="helpersbodyitem__link" href="#">Imprint</a></li>
+                <li><a class="helpersbodyitem__link" href="#">Privacy Policy</a></li>
+                <li><a class="helpersbodyitem__link" href="#">Terms & Conditions</a></li>
+                <li><a class="helpersbodyitem__link" href="#">Transparency Report</a></li>
+                <li><a class="helpersbodyitem__link" href="#">Report Abuse</a></li>
+              </ul>
+            </div>
+            <div class="helpersbodyitem">
+              <h4 class="helpersbodyitem__heading">NeutronMail</h4>
+              <ul>
+                <li><a class="helpersbodyitem__link" href="#">Pricing</a></li>
+                <li><a class="helpersbodyitem__link" href="#">Security</a></li>
+                <li><a class="helpersbodyitem__link" href="#">Shop</a></li>
+                <li><a class="helpersbodyitem__link" href="#">Press/Media Kit</a></li>
+                <li><a class="helpersbodyitem__link" href="#">Onion Site</a></li>
+              </ul>
+            </div>
+          </div>
+      <div class="footermenu">
+        <ul>
+          <li><a class="footermenu__link" href="#">Facebook<span>/</span></a></li>
+          <li><a class="footermenu__link" href="#">Twitter<span>/</span></a></li>
+          <li><a class="footermenu__link" href="#">Google+<span>/</span></a></li>
+          <li><a class="footermenu__link" href="#">Feedback Forum<span>/</span></a></li>
+          <li><a class="footermenu__link" href="#">Reddit<span>/</span></a></li>
+        </ul>
+      </div>
+      <div class="footercopyright">
+        <p>© 2017 Neutron Technologies AG. All Rights Reserved.</p>
+      </div>
+    </div>
+    </div>
+  </footer>
+</body>
+</html>
